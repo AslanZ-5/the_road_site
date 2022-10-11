@@ -17,3 +17,61 @@ html {
     --grey-color:#555;
     --light-grey-color:#777;
 }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.container{
+    background-color: var(--secondary-color);
+    margin: 3.5rem;
+    box-shadow: 0 1rem 3rem var(--grey-color);
+}
+.header{
+    width: 100%;
+    height: calc(100vh - 7rem);
+    background: linear-gradient(rgba(18,113,255,0.5), rgba(18,113,255,0.3)), url(images/header-bg.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.header-text{
+    text-align: center;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .3rem var(--grey-color);
+}
+.heading{
+    color:var(--white-color);
+    font-size:8rem;
+}
+.header-paragraph{
+    font-size: 3rem;
+    font-weight:500;
+    color:var(--secondary-color);
+    max-width:60rem;
+    margin:auto;
+}
+
+.logo{
+    position: absolute;
+    top:4rem;
+    right:4rem;
+}
+.logo h1{
+    display: flex;
+}
+.logo h1 span{
+    font-size:2rem;
+    font-weight:900;
+    background-color: var(--white-color);
+    text-transform: uppercase;
+    color: var(--primary-color);
+    width: 3.5rem;
+    height:3.5rem;
+    margin: .3rem;
+    border-radius: 50%;
+}
+
