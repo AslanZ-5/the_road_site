@@ -30,6 +30,8 @@ html {
     overflow: hidden;
 }
 /* End of common styles */
+
+/* Header */
 .header{
     width: 100%;
     height: calc(100vh - 7rem);
@@ -153,3 +155,44 @@ html {
         opacity: 1;
     }
 }
+/* End of the Header */
+
+/* The pupular tours */
+.popular-tours{
+    padding: 5rem 0 10rem 0;
+}
+.popular-tours-heading{
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 8rem;
+    color: var(--primary-color)
+}
+.cards-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.front-side{
+    width:35rem;
+}
+.card-image{
+    width: 100%;
+    border-radius: .3rem .3rem 0 0;
+}
+.front-side{
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: .3rem;
+    position: relative;
+}
+.tour-name{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 1rem #000;
+    color: var(--white-color);
+    position: absolute;
+    top:30%;
+    right:1.5rem;
+}
+/* End of the popular tours */
