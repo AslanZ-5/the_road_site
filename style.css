@@ -1,3 +1,4 @@
+/* Common styles */
 *{
     margin:0;
     padding:0;
@@ -26,7 +27,9 @@ html {
     background-color: var(--secondary-color);
     margin: 3.5rem;
     box-shadow: 0 1rem 3rem var(--grey-color);
+    overflow: hidden;
 }
+/* End of common styles */
 .header{
     width: 100%;
     height: calc(100vh - 7rem);
@@ -36,6 +39,9 @@ html {
     justify-content: center;
     align-items: center;
     position:relative;
+    perspective: 100rem;
+    
+
 }
 .header-text{
     text-align: center;
@@ -51,7 +57,7 @@ html {
     font-size: 3rem;
     font-weight:500;
     color:var(--secondary-color);
-    max-width:60rem;
+    max-width:70rem;
     margin:auto;
 }
 
@@ -73,5 +79,77 @@ html {
     height:3.5rem;
     margin: .3rem;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
+
+.logo h1 span:nth-child(1){
+    animation: drop-letter 5s .1s infinite;
+}
+.logo h1 span:nth-child(2){
+    animation: drop-letter 5s .2s infinite;
+}
+.logo h1 span:nth-child(3){
+    animation: drop-letter 5s .3s infinite;
+}
+.logo h1 span:nth-child(4){
+    animation: drop-letter 5s .4s infinite;
+}
+.logo h1 span:nth-child(5){
+    animation: drop-letter 5s .5s infinite;
+}
+.logo h1 span:nth-child(6){
+    animation: drop-letter 5s .6s infinite;
+}
+.logo h1 span:nth-child(7){
+    animation: drop-letter 5s .7s infinite;
+}
+@keyframes drop-letter {
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(0);
+    }
+    15%{
+        transform: translateY(-100%);
+    }
+    20%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.header img{
+    width:40%;
+    animation: image-float 160s infinite;
+
+    
+}
+
+@keyframes image-float {
+    0%{
+        transform: translateZ(40rem);
+        opacity: 1;
+    }
+    40%{
+        transform: translateZ(-500rem) translateX(150rem);
+        opacity: .8;
+    }
+    70%{
+        transform: translateZ(-1500rem) translateX(800rem);
+        opacity: .6;
+    }
+    80%{
+        transform: translateZ(-50rem) translateX(100rem);
+        opacity:.8;
+    }
+    100%{
+        transform: translateZ(40rem);
+        opacity: 1;
+    }
+}
