@@ -15,8 +15,8 @@ html {
     --primary-color: #2b81e4;
     --secondary-color: #eee;
     --white-color: #fff;
-    --grey-color:#555;
-    --light-grey-color:#777;
+    --gray-color:#555;
+    --light-gray-color:#777;
 }
 .center{
     display: flex;
@@ -26,7 +26,7 @@ html {
 .container{
     background-color: var(--secondary-color);
     margin: 3.5rem;
-    box-shadow: 0 1rem 3rem var(--grey-color);
+    box-shadow: 0 1rem 3rem var(--gray-color);
     overflow: hidden;
 }
 /* End of common styles */
@@ -49,7 +49,7 @@ html {
     text-align: center;
     letter-spacing: .1rem;
     text-transform: uppercase;
-    text-shadow: 0 .3rem .3rem var(--grey-color);
+    text-shadow: 0 .3rem .3rem var(--gray-color);
 }
 .heading{
     color:var(--white-color);
@@ -215,7 +215,7 @@ html {
     font-weight: 500;
     margin: 2rem 0 ;
     padding-bottom: 1.5rem;
-    color: var(--light-grey-color);
+    color: var(--light-gray-color);
     border-bottom: .1rem solid var(--primary-color);
 }
 .back-side{
@@ -317,7 +317,7 @@ html {
     font-size: 3rem;
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--grey-color);
+    color: var(--gray-color);
     margin-bottom: 1rem;
 }
 .story-text{
@@ -327,9 +327,102 @@ html {
 .story-paragraph{
     font-size: 1.8rem;
     font-weight: 300;
-    color: var(--light-grey-color);
+    color: var(--light-gray-color);
 }
 .story-paragraph::first-letter{
     margin-left:1rem;
 }
 /* end of the stories section */
+
+/* Contact section */
+.contact{
+    padding: 10rem 0 10rem 0;
+    text-align: center;
+    background: url(images/contact-us-bg.png) no-repeat center;
+    background-size: cover;
+}
+.contact-heading{
+    color:var(--white-color);
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 8rem;
+    letter-spacing: .5rem;
+    text-shadow: 0 1rem 2rem #000;
+}
+.contact-form{
+    background-color: rgba(253,253,253,0.95);
+    width:70rem;
+    height:50rem;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    box-shadow: 0 1rem 3rem #000;
+    padding: 0 5rem;
+}
+.input-groups{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+.input-group{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    position: relative;
+}
+.input-groups .input-group{
+    width:48.5%
+}
+.input-group input,
+.input-group textarea{
+    padding: 3rem 1rem 1rem 1rem;
+    background-color: var(--secondary-color);
+    border: .1rem solid var(--secondary-color);
+    color:var(--light-gray-color);
+    font-weight: 300;
+    font-size:1.4rem;
+    border-radius: .3rem;
+    letter-spacing: .1rem;
+    transition: border .5s;
+}
+.input-group input:focus,
+.input-group textarea:focus{
+    border:.1rem solid #ccc;
+}
+.input-group label{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color:var(--gray-color);
+    text-transform:uppercase;
+    letter-spacing: .1rem;
+    position: absolute;
+    top:1rem;
+    left:1rem;
+}
+.form-btn{
+    font-size: 1.6rem;
+    width: 100%;
+    padding: .9rem 0;
+    background-color:var(--light-gray-color);
+    margin-top: 1rem;
+    letter-spacing: .2rem;
+    border:none;
+    border-radius: .3rem;
+    color:var(--white-color);
+    cursor:pointer;
+    transition: background-color .4s;
+}
+.form-btn:hover{
+    background-color: var(--gray-color);
+}
+.input-group textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 15rem;
+}
+/* end of the Contact section */
