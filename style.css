@@ -445,3 +445,35 @@ html {
     
 }
 /* end of the Contact section */
+
+/* Footer */
+.footer{
+    background-color: var(--gray-color);
+    padding:4rem 0 2rem 0 ;
+}
+.footer-list{
+    display: flex;
+    justify-content: center;
+}
+.footer-link{
+    font-size: 2rem;
+    color:var(--white-color);
+    margin: 0 2rem;
+    background-color: var(--gray-color);
+    padding:.3rem 3rem;
+    letter-spacing: .2rem;
+    transition: all .4s;
+}
+.footer-link:hover{
+    transform: rotate(-10deg);
+    box-shadow: 0 1rem 2rem #000;
+}
+.footer-paragraph{
+    color:var(--white-color);
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    letter-spacing: .2rem;
+}
+/* end of the Footer */
