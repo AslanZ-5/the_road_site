@@ -30,7 +30,114 @@ html {
     overflow: hidden;
 }
 /* End of common styles */
+/* navbar */
+.navbar-icon{
+    width:5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.open-navbar-icon{
+    position:fixed;
+    z-index: 200;
+    top:6rem;
+    left:6rem; 
+}
+.navbar-icon .line{
+    width:3.5rem;
+    height:.3rem;
+    background-color: var(--light-gray-color);
+}
+.open-navbar-icon .line{
+    margin: .3rem 0;
+}
+.navbar-wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .7);
+    position:fixed;
+    left:0;
+    bottom:-100%;
+    opacity:0;
+    z-index:300;
+    padding: 3.5rem 5.5rem 3.5rem 3.5rem;
+    transition: bottom .2s, opacity .5s;
+}
+.change .navbar-wrapper{
+    bottom: 0;
+    opacity: 1;
+    transition: bottom .2s, opacity .5s  .25s;
+}
+.navbar{
+    width:100%;
+    height: 100%;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.3)),url(images/navbar-bg.jpg) no-repeat center;
+    position: relative;
+    background-size: cover;
+    overflow-y: hidden;
 
+}
+.close-navbar-icon{
+    position: absolute;
+    top:2rem;
+    right: 2rem;
+    z-index: 300;
+}
+.close-navbar-icon .line{
+    position: absolute;
+}
+.line1{
+    transform: rotate(40deg);
+}
+.line2{
+    transform: rotate(-40deg);
+}
+.nav-list{
+    height:100%;
+    display: flex;
+}
+.nav-link{
+    width:100%;
+    font-size:3rem;
+    font-weight: 500;
+    color:var(--white-color);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0.8;
+    position: relative;
+    top:-100%;
+}
+.change .nav-link{
+    top:0;
+}
+.nav-link:hover{
+    opacity:1;
+    color:var(--primary-color);
+}
+.change .nav-link:nth-child(1){
+    transition: top 1s .4s, opacity .3s, color .3s;
+}
+.change .nav-link:nth-child(2){
+    transition: top 1s .6s, opacity .3s, color .3s;
+}
+.change .nav-link:nth-child(3){
+    transition: top 1s .8s, opacity .3s, color .3s;
+}
+.change .nav-link:nth-child(4){
+    transition: top 1s 1s, opacity .3s, color .3s;
+}
+.change .nav-link:nth-child(5){
+    transition: top 1s 1.2s, opacity .3s, color .3s;
+}
+/* end of the navbar */
 /* Header */
 .header{
     width: 100%;
@@ -476,4 +583,5 @@ html {
     font-weight: 200;
     letter-spacing: .2rem;
 }
+
 /* end of the Footer */
