@@ -340,6 +340,8 @@ html {
     text-align: center;
     background: url(images/contact-us-bg.png) no-repeat center;
     background-size: cover;
+    animation: contact-bg 35s infinite ;
+    
 }
 .contact-heading{
     color:var(--white-color);
@@ -424,5 +426,22 @@ html {
     max-width: 100%;
     min-width: 100%;
     max-height: 15rem;
+}
+@keyframes contact-bg {
+    0%{
+        background-color: #3d3d3d;
+    }
+    25%{
+        background-color: #ced8e4;
+    }
+    50%{
+        background-color: #1e81f3;
+    }
+    75%{
+        background-color: #ff7842;
+    }
+    100%{}
+    
+    
 }
 /* end of the Contact section */
